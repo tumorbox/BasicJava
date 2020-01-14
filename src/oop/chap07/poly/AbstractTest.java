@@ -1,5 +1,4 @@
 package oop.chap07.poly;
-
 //추상클래스 - abstract의 의미
 /*
  * 미완성된 클래스, 모든 내용이 구현이 되어있지 않은 클래스로 완성되지 않았으므로
@@ -33,26 +32,29 @@ package oop.chap07.poly;
  *      재정의하도록 하기 위해서     
  *                 
  */
-abstract class AbstractSuper {
+abstract class AbstractSuper{
 	public abstract void show();
-
-	public void display() {// 일반메소드
+	public void display() {//일반메소드
 		System.out.println("display");
 	}
 }
-
-class AbstractSub extends AbstractSuper {
+class AbstractSub extends AbstractSuper{
 
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub
-
+		
 	}
-
+	
 }
-
 public class AbstractTest {
 	public static void main(String[] args) {
 		AbstractSuper obj = new AbstractSuper();
 	}
 }
+
+
+
+
+
+

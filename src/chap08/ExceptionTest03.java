@@ -1,8 +1,6 @@
 package chap08;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 //여러 개의 예외가 발생하는 경우 처리
 //사용자가 입력하는 값에 따라 예외가 다르게 발생한다.
 // 1. 사용자가 제대로 값을 입력: 예외가 발생되지 않으므로 catch블럭은 실행되지 않는다.
@@ -25,15 +23,20 @@ public class ExceptionTest03 {
 			int num1 = key.nextInt();
 			System.out.print("나눌 숫자를 입력하세요:");
 			int num2 = key.nextInt();
-			System.out.println("결과:" + (num1 / num2));
-		} catch (InputMismatchException e) {
+			System.out.println("결과:"+(num1/num2));
+		}catch(InputMismatchException e) {
 			System.out.println("문자를 입력할 수 없습니다.");
-		} catch (ArithmeticException e) {
+		}catch(ArithmeticException e) {
 			System.out.println("나눌 숫자에 0을 입력할 수 없습니다.");
-		} catch (Exception e) {// 모든 예외클래스의 상위클래스
+		}catch(Exception e) {//모든 예외클래스의 상위클래스
 			System.out.println("예외발생");
-			System.out.println("예외메시지:" + e.getMessage());
-			// e.printStackTrace();
+			System.out.println("예외메시지:"+e.getMessage());
+			//e.printStackTrace();
 		}
 	}
 }
+
+
+
+
+

@@ -5,8 +5,8 @@ public class CalcTest {
 		Calulator obj = new Calulator();
 		int num1 = Integer.parseInt(args[0]);
 		int num2 = Integer.parseInt(args[2]);
-		double result = obj.divide(num1, num2);
-		System.out.println("결과:" + result);
+		double result = obj.divide(num1,num2);
+		System.out.println("결과:"+result);
 	}
 
 }

@@ -9,9 +9,9 @@ public class ScannerTest {
 		Scanner key = new Scanner(System.in);
 		System.out.println("문자열을 입력하세요:");
 		String data = key.next();
-		System.out.println("키보드로 입력받은 문자열:" + data);
+		System.out.println("키보드로 입력받은 문자열:"+data);
 		System.out.print("숫자를 입력하세요:");
 		int intVal = key.nextInt();
-		System.out.println("입력받은 숫자=>" + intVal);
+		System.out.println("입력받은 숫자=>"+intVal);
 	}
 }

@@ -1,5 +1,4 @@
 package chap05;
-
 /*
  * 2차원 배열 연습
  * [출력형태]
@@ -17,30 +16,30 @@ package chap05;
  */
 public class Array2DExam01 {
 	public static void main(String[] args) {
-		// 1. 2차원 배열을 생성
-		int[][] myarr = new int[5][5];
-		// 2. 2차원 배열에 값을 저장하기 - setting
+		//1. 2차원 배열을 생성
+		int[][] myarr=new int[5][5];
+		//2. 2차원 배열에 값을 저장하기 - setting
 		int value = 1;
-		for (int row = 0; row < myarr.length; row++) {
-			for (int i = 0; i < myarr[row].length; i++) {
+		for(int row=0;row<myarr.length;row++) {
+			for(int i=0;i<myarr[row].length;i++) {
 				myarr[row][i] = value;
 				value++;
 			}
 		}
-		// 3. 2차원 배열에 저장된 데이터를 출력형태와 같이 출력하기 - getting
-		for (int row = 0; row < myarr.length; row++) {
-			for (int i = 0; i < myarr[row].length; i++) {
-				System.out.print(myarr[row][i] + "\t");
+		//3. 2차원 배열에 저장된 데이터를 출력형태와 같이 출력하기 - getting
+		for(int row=0;row<myarr.length;row++) {
+			for(int i=0;i<myarr[row].length;i++) {
+				System.out.print(myarr[row][i]+"\t");
 			}
 			System.out.println();
 		}
 		System.out.println("===============================");
-		for (int row = 0; row < myarr.length; row++) {
-			for (int i = 0; i < myarr[row].length; i++) {
-				if (row == i) {
-					System.out.print("*" + "\t");
-				} else {
-					System.out.print(myarr[row][i] + "\t");
+		for(int row=0;row<myarr.length;row++) {
+			for(int i=0;i<myarr[row].length;i++) {
+				if(row==i) {
+					System.out.print("*"+"\t");
+				}else {
+					System.out.print(myarr[row][i]+"\t");
 				}
 			}
 			System.out.println();
@@ -48,3 +47,10 @@ public class Array2DExam01 {
 	}
 
 }
+
+
+
+
+
+
+

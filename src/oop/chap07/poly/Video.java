@@ -1,31 +1,29 @@
 package oop.chap07.poly;
 
-public class Video extends Content {
+public class Video extends Content{
 	String genre;
-
 	public Video() {
-
+		
 	}
-
-	public Video(String title, String genre) {
+	
+	public Video(String title,String genre) {
 		super(title);
 		this.genre = genre;
 	}
-
+ 
 	@Override
 	public void totalPrice() {
-		if (genre.equals("new")) {
+		if(genre.equals("new")) {
 			setPrice(2000);
-		} else if (genre.equals("comic")) {
+		}else if(genre.equals("comic")) {
 			setPrice(1500);
-		} else if (genre.equals("child")) {
+		}else if(genre.equals("child")) {
 			setPrice(1000);
-		} else {
+		}else {
 			setPrice(500);
 		}
-
+		
 	}
-
 	public String getGenre() {
 		return genre;
 	}
@@ -34,4 +32,6 @@ public class Video extends Content {
 		this.genre = genre;
 	}
 
+	
+	
 }

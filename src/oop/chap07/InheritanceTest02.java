@@ -1,5 +1,4 @@
 package oop.chap07;
-
 /*
  *  <<상속관계에서 메소드가 갖는 특징>>
  *   1. 상속관계에서는 상위클래스에 정의된 메소드를 하위클래스에서 사용할 
@@ -15,24 +14,21 @@ package oop.chap07;
  *                 모두 동일해야 한다.
  *   3. 부모클래스의 메소드를 사용하고 싶은 경우 super로 호출한다. 
  */
-class Parent {
+class Parent{
 	public void display() {
 		System.out.println("부모의 display...");
 	}
 }
-
-class Child extends Parent {
+class Child extends Parent{
 	public void display() {
 		System.out.println("자식클래스의 display");
 		super.display();
 	}
-
 	public void test() {
 		System.out.println("자식클래스의 test...");
 		display();
 	}
 }
-
 public class InheritanceTest02 {
 	public static void main(String[] args) {
 		Child obj = new Child();

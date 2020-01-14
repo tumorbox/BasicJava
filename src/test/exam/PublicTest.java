@@ -8,7 +8,7 @@ public class PublicTest {
 	public static void main(String[] args) {
 		Person p1 = new Person();
 		p1.name = "장동건";
-		p1.addr = "서울시";// default이므로 외부 패키지에서 접근할 수 없다.
-		p1.age = 45; // private이므로 외부 패키지, 외부 클래스 모두 접근할 수 없다.
+		p1.addr = "서울시";//default이므로 외부 패키지에서 접근할 수 없다.
+		p1.age = 45; //private이므로 외부 패키지, 외부 클래스 모두 접근할 수 없다.
 	}
 }

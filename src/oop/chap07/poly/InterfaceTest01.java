@@ -1,5 +1,4 @@
 package oop.chap07.poly;
-
 /*
  * 인터페이스 연습
  * <<인터페이스>>
@@ -21,47 +20,41 @@ package oop.chap07.poly;
  *    인식된다.(상속받는 모든 클래스,인터페이스의 하위 타입이 된다.)
  *    
  */
-interface InterA {
+interface InterA{
 	public abstract void test();
-
 	void display(int num);
 }
-
-interface InterB extends InterA {
+interface InterB extends InterA{
 	void show();
 }
-
-interface InterC {
-
+interface InterC{
+	
 }
-
-class SuperA {
-
+class SuperA{
+	
 }
-
-// SubA는 SuperA,InterA,InterB,InterC의 하위
-class SubA extends SuperA implements InterB, InterC {
+//SubA는 SuperA,InterA,InterB,InterC의 하위
+class SubA  extends SuperA implements InterB,InterC{
 
 	@Override
 	public void test() {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void display(int num) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub
-
+		
 	}
-
+	
 }
-
 public class InterfaceTest01 {
 	public static void main(String[] args) {
 		SuperA obj1 = new SubA();
@@ -70,3 +63,20 @@ public class InterfaceTest01 {
 		InterC obj4 = new SubA();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,4 @@
 package chap05;
-
 //배열 액세스하기
 public class ArrayTest03 {
 	public static void main(String[] args) {
@@ -9,12 +8,25 @@ public class ArrayTest03 {
 		System.out.println(myarr[2]);
 		System.out.println(myarr[3]);
 		System.out.println(myarr[4]);
-		// 배열의 요소의 크기를 출력
-		// length - 배열의 사이즈를 저장하고 있는 기본 변수(자동으로 제공되는)
-		System.out.println("배열의 요소의 갯수:" + myarr.length);
+		//배열의 요소의 크기를 출력
+		//length - 배열의 사이즈를 저장하고 있는 기본 변수(자동으로 제공되는)
+		System.out.println("배열의 요소의 갯수:"+myarr.length);
 		System.out.println("======================");
-		for (int i = 0; i < myarr.length; i++) {
+		for(int i=0;i<myarr.length;i++) {
 			System.out.println(myarr[i]);
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
